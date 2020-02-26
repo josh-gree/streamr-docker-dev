@@ -122,7 +122,7 @@ services:
             EE_URL: http://engine-and-editor:8081/streamr-core
             NETWORK_ID: 1111
         healthcheck:
-            test: ["CMD", "curl", "-sS", "http://localhost:8545"]
+            test: ["CMD", "npm", "run", "health"]
             interval: 10s
             timeout: 10s
             retries: 60
