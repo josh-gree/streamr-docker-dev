@@ -15,7 +15,7 @@ services:
             retries: 60
     tracker-1:
         container_name: streamr-dev-tracker-1
-        image: streamr/broker-node:dev
+        image: streamr/broker-node:CORE-1905
         restart: on-failure
         ports:
             - "30301:30301"
@@ -28,7 +28,7 @@ services:
             retries: 20
     tracker-2:
         container_name: streamr-dev-tracker-2
-        image: streamr/broker-node:dev
+        image: streamr/broker-node:CORE-1905
         restart: on-failure
         ports:
             - "30302:30302"
@@ -41,7 +41,7 @@ services:
             retries: 20
     tracker-3:
         container_name: streamr-dev-tracker-3
-        image: streamr/broker-node:dev
+        image: streamr/broker-node:CORE-1905
         restart: on-failure
         ports:
             - "30303:30303"
@@ -54,7 +54,7 @@ services:
             retries: 20
     broker-node-storage-1:
         container_name: streamr-dev-broker-node-storage-1
-        image: streamr/broker-node:dev
+        image: streamr/broker-node:CORE-1905
         restart: on-failure
         ports:
             - "8890:8890"
@@ -78,7 +78,7 @@ services:
             retries: 20
     broker-node-no-storage-1:
         container_name: streamr-dev-broker-node-no-storage-1
-        image: streamr/broker-node:dev
+        image: streamr/broker-node:CORE-1905
         restart: on-failure
         ports:
             - "8790:8790"
@@ -99,7 +99,7 @@ services:
             retries: 20
     broker-node-no-storage-2:
         container_name: streamr-dev-broker-node-no-storage-2
-        image: streamr/broker-node:dev
+        image: streamr/broker-node:CORE-1905
         restart: on-failure
         ports:
             - "8690:8690"
